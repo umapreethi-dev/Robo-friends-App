@@ -1,25 +1,19 @@
-import logo from './logo.svg';
-import './App.css';
+import React from "react";
+import CardList from './Components/cardList';
+import {robots} from './Components/robots';
+import SearchBox from './searchBox';
+import './css/body.css';
 
-function App() {
+const App = () => {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div className="body">
+      <h1>Robo Friends</h1>
+      <SearchBox/>
+      <div className="cards">
+        <CardList robots={robots} />
+      </div>
     </div>
   );
-}
+};
 
 export default App;

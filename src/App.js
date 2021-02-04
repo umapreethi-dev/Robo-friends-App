@@ -1,8 +1,9 @@
 import React from "react";
 import CardList from './Components/cardList';
 import {robots} from './Components/robots';
-import SearchBox from './searchBox';
+import SearchBox from './Components/searchBox';
 import './css/body.css';
+import './App.css';
 
 const App = () => {
   return (
